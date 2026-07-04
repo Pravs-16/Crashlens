@@ -1,0 +1,736 @@
+{
+  "machine": "machine-1-1",
+  "detection": {
+    "threshold": 0.06409038052537987,
+    "precision": 0.9631484794275492,
+    "recall": 0.9992576095025983,
+    "f1": 0.9808708325742395
+  },
+  "interpretation": {
+    "hitrate@100%": 0.7415,
+    "hitrate@150%": 0.8125
+  },
+  "n_predicted_segments": 24,
+  "segments": [
+    {
+      "id": 0,
+      "start": 12419,
+      "end": 12419,
+      "duration_min": 1,
+      "overlaps_true_anomaly": false,
+      "top_metrics": [
+        {
+          "metric": "cpu_r",
+          "score": 0.7502
+        },
+        {
+          "metric": "load_5",
+          "score": 0.2683
+        },
+        {
+          "metric": "curr_estab",
+          "score": 0.1808
+        },
+        {
+          "metric": "tcp_use",
+          "score": 0.1751
+        },
+        {
+          "metric": "load_1",
+          "score": 0.1342
+        }
+      ],
+      "explanation": "Likely compute saturation (CPU/load): the metrics deviating most from normal behaviour in this window were cpu_r, load_5, curr_estab. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 1,
+      "start": 15149,
+      "end": 15158,
+      "duration_min": 10,
+      "overlaps_true_anomaly": false,
+      "top_metrics": [
+        {
+          "metric": "out_rsts",
+          "score": 2.4378
+        },
+        {
+          "metric": "cpu_r",
+          "score": 0.5689
+        },
+        {
+          "metric": "passive_opens",
+          "score": 0.5357
+        },
+        {
+          "metric": "active_opens",
+          "score": 0.4486
+        },
+        {
+          "metric": "load_15",
+          "score": 0.3362
+        }
+      ],
+      "explanation": "Likely network / connection issues: the metrics deviating most from normal behaviour in this window were out_rsts, cpu_r, passive_opens. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 2,
+      "start": 15162,
+      "end": 15170,
+      "duration_min": 9,
+      "overlaps_true_anomaly": false,
+      "top_metrics": [
+        {
+          "metric": "out_rsts",
+          "score": 2.2264
+        },
+        {
+          "metric": "cpu_r",
+          "score": 1.327
+        },
+        {
+          "metric": "active_opens",
+          "score": 0.387
+        },
+        {
+          "metric": "passive_opens",
+          "score": 0.3602
+        },
+        {
+          "metric": "curr_estab",
+          "score": 0.306
+        }
+      ],
+      "explanation": "Likely network / connection issues: the metrics deviating most from normal behaviour in this window were out_rsts, cpu_r, active_opens. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 3,
+      "start": 15237,
+      "end": 15240,
+      "duration_min": 4,
+      "overlaps_true_anomaly": false,
+      "top_metrics": [
+        {
+          "metric": "cpu_r",
+          "score": 1.2878
+        },
+        {
+          "metric": "tcp_use",
+          "score": 0.3962
+        },
+        {
+          "metric": "curr_estab",
+          "score": 0.3771
+        },
+        {
+          "metric": "out_rsts",
+          "score": 0.1976
+        },
+        {
+          "metric": "load_1",
+          "score": 0.16
+        }
+      ],
+      "explanation": "Likely compute saturation (CPU/load): the metrics deviating most from normal behaviour in this window were cpu_r, tcp_use, curr_estab. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 4,
+      "start": 15246,
+      "end": 15265,
+      "duration_min": 20,
+      "overlaps_true_anomaly": false,
+      "top_metrics": [
+        {
+          "metric": "cpu_r",
+          "score": 1.8356
+        },
+        {
+          "metric": "tcp_use",
+          "score": 0.5276
+        },
+        {
+          "metric": "out_rsts",
+          "score": 0.5165
+        },
+        {
+          "metric": "curr_estab",
+          "score": 0.5069
+        },
+        {
+          "metric": "load_1",
+          "score": 0.3921
+        }
+      ],
+      "explanation": "Likely compute saturation (CPU/load): the metrics deviating most from normal behaviour in this window were cpu_r, tcp_use, out_rsts. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 5,
+      "start": 16256,
+      "end": 16276,
+      "duration_min": 21,
+      "overlaps_true_anomaly": true,
+      "top_metrics": [
+        {
+          "metric": "cpu_r",
+          "score": 1.5578
+        },
+        {
+          "metric": "out_rsts",
+          "score": 1.2142
+        },
+        {
+          "metric": "active_opens",
+          "score": 0.6398
+        },
+        {
+          "metric": "curr_estab",
+          "score": 0.5799
+        },
+        {
+          "metric": "tcp_use",
+          "score": 0.5781
+        }
+      ],
+      "explanation": "Likely network / connection issues: the metrics deviating most from normal behaviour in this window were cpu_r, out_rsts, active_opens. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 6,
+      "start": 16372,
+      "end": 16381,
+      "duration_min": 10,
+      "overlaps_true_anomaly": true,
+      "top_metrics": [
+        {
+          "metric": "cpu_r",
+          "score": 1.9187
+        },
+        {
+          "metric": "out_rsts",
+          "score": 0.7086
+        },
+        {
+          "metric": "tcp_use",
+          "score": 0.517
+        },
+        {
+          "metric": "curr_estab",
+          "score": 0.5058
+        },
+        {
+          "metric": "load_1",
+          "score": 0.243
+        }
+      ],
+      "explanation": "Likely compute saturation (CPU/load): the metrics deviating most from normal behaviour in this window were cpu_r, out_rsts, tcp_use. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 7,
+      "start": 16962,
+      "end": 16964,
+      "duration_min": 3,
+      "overlaps_true_anomaly": true,
+      "top_metrics": [
+        {
+          "metric": "disk_q",
+          "score": 9.8794
+        },
+        {
+          "metric": "disk_w",
+          "score": 4.3831
+        },
+        {
+          "metric": "disk_u",
+          "score": 3.9985
+        },
+        {
+          "metric": "cpu_r",
+          "score": 1.8179
+        },
+        {
+          "metric": "tcp_tw",
+          "score": 0.5436
+        }
+      ],
+      "explanation": "Likely disk I/O contention: the metrics deviating most from normal behaviour in this window were disk_q, disk_w, disk_u. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 8,
+      "start": 17340,
+      "end": 17342,
+      "duration_min": 3,
+      "overlaps_true_anomaly": true,
+      "top_metrics": [
+        {
+          "metric": "cpu_r",
+          "score": 1.3595
+        },
+        {
+          "metric": "out_rsts",
+          "score": 0.4871
+        },
+        {
+          "metric": "tcp_use",
+          "score": 0.4353
+        },
+        {
+          "metric": "curr_estab",
+          "score": 0.4314
+        },
+        {
+          "metric": "passive_opens",
+          "score": 0.3894
+        }
+      ],
+      "explanation": "Likely network / connection issues: the metrics deviating most from normal behaviour in this window were cpu_r, out_rsts, tcp_use. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 9,
+      "start": 17358,
+      "end": 17511,
+      "duration_min": 154,
+      "overlaps_true_anomaly": true,
+      "top_metrics": [
+        {
+          "metric": "in_errs",
+          "score": 16.8629
+        },
+        {
+          "metric": "listen_overflows",
+          "score": 15.8792
+        },
+        {
+          "metric": "tcp_timeouts",
+          "score": 15.55
+        },
+        {
+          "metric": "cpu_r",
+          "score": 11.1711
+        },
+        {
+          "metric": "retransegs",
+          "score": 10.2345
+        }
+      ],
+      "explanation": "Likely network / connection issues: the metrics deviating most from normal behaviour in this window were in_errs, listen_overflows, tcp_timeouts. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 10,
+      "start": 18298,
+      "end": 18300,
+      "duration_min": 3,
+      "overlaps_true_anomaly": true,
+      "top_metrics": [
+        {
+          "metric": "disk_r",
+          "score": 15.956
+        },
+        {
+          "metric": "disk_u",
+          "score": 6.168
+        },
+        {
+          "metric": "disk_svc",
+          "score": 0.7009
+        },
+        {
+          "metric": "disk_w",
+          "score": 0.2413
+        },
+        {
+          "metric": "out_rsts",
+          "score": 0.2107
+        }
+      ],
+      "explanation": "Likely disk I/O contention: the metrics deviating most from normal behaviour in this window were disk_r, disk_u, disk_svc. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 11,
+      "start": 18460,
+      "end": 18484,
+      "duration_min": 25,
+      "overlaps_true_anomaly": true,
+      "top_metrics": [
+        {
+          "metric": "listen_overflows",
+          "score": 15.8798
+        },
+        {
+          "metric": "tcp_timeouts",
+          "score": 15.4975
+        },
+        {
+          "metric": "retransegs",
+          "score": 9.8032
+        },
+        {
+          "metric": "out_rsts",
+          "score": 6.0766
+        },
+        {
+          "metric": "cpu_r",
+          "score": 3.4656
+        }
+      ],
+      "explanation": "Likely network / connection issues: the metrics deviating most from normal behaviour in this window were listen_overflows, tcp_timeouts, retransegs. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 12,
+      "start": 19366,
+      "end": 19369,
+      "duration_min": 4,
+      "overlaps_true_anomaly": true,
+      "top_metrics": [
+        {
+          "metric": "disk_q",
+          "score": 10.3125
+        },
+        {
+          "metric": "disk_w",
+          "score": 4.9727
+        },
+        {
+          "metric": "cpu_r",
+          "score": 2.7134
+        },
+        {
+          "metric": "disk_u",
+          "score": 1.8722
+        },
+        {
+          "metric": "out_rsts",
+          "score": 0.868
+        }
+      ],
+      "explanation": "Likely disk I/O contention: the metrics deviating most from normal behaviour in this window were disk_q, disk_w, cpu_r. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 13,
+      "start": 19692,
+      "end": 19692,
+      "duration_min": 1,
+      "overlaps_true_anomaly": true,
+      "top_metrics": [
+        {
+          "metric": "out_rsts",
+          "score": 1.1108
+        },
+        {
+          "metric": "tcp_tw",
+          "score": 0.0769
+        },
+        {
+          "metric": "eth1_fi",
+          "score": 0.0108
+        },
+        {
+          "metric": "load_15",
+          "score": 0.0095
+        },
+        {
+          "metric": "udp_in_dg",
+          "score": 0.0088
+        }
+      ],
+      "explanation": "Likely network / connection issues: the metrics deviating most from normal behaviour in this window were out_rsts, tcp_tw, eth1_fi. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 14,
+      "start": 19907,
+      "end": 19979,
+      "duration_min": 73,
+      "overlaps_true_anomaly": true,
+      "top_metrics": [
+        {
+          "metric": "out_rsts",
+          "score": 3.0965
+        },
+        {
+          "metric": "tcp_timeouts",
+          "score": 1.8337
+        },
+        {
+          "metric": "cpu_r",
+          "score": 1.4154
+        },
+        {
+          "metric": "retransegs",
+          "score": 0.5234
+        },
+        {
+          "metric": "tcp_use",
+          "score": 0.323
+        }
+      ],
+      "explanation": "Likely network / connection issues: the metrics deviating most from normal behaviour in this window were out_rsts, tcp_timeouts, cpu_r. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 15,
+      "start": 19982,
+      "end": 19983,
+      "duration_min": 2,
+      "overlaps_true_anomaly": true,
+      "top_metrics": [
+        {
+          "metric": "out_rsts",
+          "score": 1.4782
+        },
+        {
+          "metric": "cpu_r",
+          "score": 0.7464
+        },
+        {
+          "metric": "load_15",
+          "score": 0.1303
+        },
+        {
+          "metric": "curr_estab",
+          "score": 0.1057
+        },
+        {
+          "metric": "tcp_use",
+          "score": 0.1032
+        }
+      ],
+      "explanation": "Likely network / connection issues: the metrics deviating most from normal behaviour in this window were out_rsts, cpu_r, load_15. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 16,
+      "start": 19990,
+      "end": 20086,
+      "duration_min": 97,
+      "overlaps_true_anomaly": true,
+      "top_metrics": [
+        {
+          "metric": "listen_overflows",
+          "score": 15.9506
+        },
+        {
+          "metric": "tcp_timeouts",
+          "score": 15.5627
+        },
+        {
+          "metric": "out_rsts",
+          "score": 6.2805
+        },
+        {
+          "metric": "retransegs",
+          "score": 4.5854
+        },
+        {
+          "metric": "cpu_r",
+          "score": 4.2251
+        }
+      ],
+      "explanation": "Likely network / connection issues: the metrics deviating most from normal behaviour in this window were listen_overflows, tcp_timeouts, out_rsts. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 17,
+      "start": 20876,
+      "end": 20877,
+      "duration_min": 2,
+      "overlaps_true_anomaly": true,
+      "top_metrics": [
+        {
+          "metric": "disk_q",
+          "score": 1.6469
+        },
+        {
+          "metric": "out_rsts",
+          "score": 1.198
+        },
+        {
+          "metric": "disk_w",
+          "score": 0.743
+        },
+        {
+          "metric": "cpu_r",
+          "score": 0.6274
+        },
+        {
+          "metric": "disk_u",
+          "score": 0.0996
+        }
+      ],
+      "explanation": "Likely disk I/O contention: the metrics deviating most from normal behaviour in this window were disk_q, out_rsts, disk_w. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 18,
+      "start": 20981,
+      "end": 20982,
+      "duration_min": 2,
+      "overlaps_true_anomaly": true,
+      "top_metrics": [
+        {
+          "metric": "disk_r",
+          "score": 2.4526
+        },
+        {
+          "metric": "out_rsts",
+          "score": 1.0986
+        },
+        {
+          "metric": "disk_u",
+          "score": 0.546
+        },
+        {
+          "metric": "disk_svc",
+          "score": 0.3695
+        },
+        {
+          "metric": "cpu_r",
+          "score": 0.0353
+        }
+      ],
+      "explanation": "Likely disk I/O contention: the metrics deviating most from normal behaviour in this window were disk_r, out_rsts, disk_u. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 19,
+      "start": 22201,
+      "end": 22222,
+      "duration_min": 22,
+      "overlaps_true_anomaly": false,
+      "top_metrics": [
+        {
+          "metric": "out_rsts",
+          "score": 2.4362
+        },
+        {
+          "metric": "cpu_r",
+          "score": 0.6755
+        },
+        {
+          "metric": "tcp_use",
+          "score": 0.1526
+        },
+        {
+          "metric": "curr_estab",
+          "score": 0.1439
+        },
+        {
+          "metric": "load_15",
+          "score": 0.1415
+        }
+      ],
+      "explanation": "Likely network / connection issues: the metrics deviating most from normal behaviour in this window were out_rsts, cpu_r, tcp_use. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 20,
+      "start": 22226,
+      "end": 22228,
+      "duration_min": 3,
+      "overlaps_true_anomaly": false,
+      "top_metrics": [
+        {
+          "metric": "out_rsts",
+          "score": 1.5795
+        },
+        {
+          "metric": "cpu_r",
+          "score": 0.8745
+        },
+        {
+          "metric": "load_1",
+          "score": 0.237
+        },
+        {
+          "metric": "tcp_use",
+          "score": 0.1441
+        },
+        {
+          "metric": "curr_estab",
+          "score": 0.1281
+        }
+      ],
+      "explanation": "Likely network / connection issues: the metrics deviating most from normal behaviour in this window were out_rsts, cpu_r, load_1. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 21,
+      "start": 22303,
+      "end": 22331,
+      "duration_min": 29,
+      "overlaps_true_anomaly": false,
+      "top_metrics": [
+        {
+          "metric": "out_rsts",
+          "score": 2.2016
+        },
+        {
+          "metric": "cpu_r",
+          "score": 1.7699
+        },
+        {
+          "metric": "tcp_use",
+          "score": 0.4353
+        },
+        {
+          "metric": "curr_estab",
+          "score": 0.4219
+        },
+        {
+          "metric": "retransegs",
+          "score": 0.245
+        }
+      ],
+      "explanation": "Likely network / connection issues: the metrics deviating most from normal behaviour in this window were out_rsts, cpu_r, tcp_use. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 22,
+      "start": 24678,
+      "end": 24680,
+      "duration_min": 3,
+      "overlaps_true_anomaly": true,
+      "top_metrics": [
+        {
+          "metric": "disk_q",
+          "score": 10.5367
+        },
+        {
+          "metric": "disk_w",
+          "score": 5.1775
+        },
+        {
+          "metric": "disk_u",
+          "score": 3.3384
+        },
+        {
+          "metric": "cpu_r",
+          "score": 2.4958
+        },
+        {
+          "metric": "mem_u_e",
+          "score": 0.3469
+        }
+      ],
+      "explanation": "Likely disk I/O contention: the metrics deviating most from normal behaviour in this window were disk_q, disk_w, disk_u. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    },
+    {
+      "id": 23,
+      "start": 26112,
+      "end": 26114,
+      "duration_min": 3,
+      "overlaps_true_anomaly": true,
+      "top_metrics": [
+        {
+          "metric": "disk_q",
+          "score": 10.5071
+        },
+        {
+          "metric": "disk_w",
+          "score": 4.8144
+        },
+        {
+          "metric": "cpu_r",
+          "score": 2.8054
+        },
+        {
+          "metric": "disk_u",
+          "score": 1.6769
+        },
+        {
+          "metric": "out_rsts",
+          "score": 0.6232
+        }
+      ],
+      "explanation": "Likely disk I/O contention: the metrics deviating most from normal behaviour in this window were disk_q, disk_w, cpu_r. (rule-based explanation \u2014 set ANTHROPIC_API_KEY for an LLM analysis)"
+    }
+  ]
+}
