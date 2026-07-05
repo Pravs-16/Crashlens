@@ -81,6 +81,8 @@ python -m crashlens.baselines      # z-score + Isolation Forest comparison
 python -m crashlens.detect         # score test set, flag anomalies, contributions
 python -m crashlens.explain        # LLM (or rule-based) root-cause explanations
 python app.py                      # dashboard at http://localhost:5000
+
+python -m unittest discover tests  # unit tests for the evaluation logic
 ```
 
 For LLM explanations, set an Anthropic API key first
@@ -115,6 +117,8 @@ crashlens/
   store.py       optional MongoDB persistence
 scripts/
   download_data.py
+tests/
+  test_evaluate.py   unit tests for segments, point-adjust, HitRate
 app.py           Flask dashboard
 ```
 
